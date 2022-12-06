@@ -1,3 +1,5 @@
+// comment shortcut (ctrl+k) + (ctrl+C)
+// solution explorer shortcut (ctrl+Alt+L)
 namespace session_001_Visual_Studio
 {
     public partial class Form1 : Form
@@ -34,3 +36,4 @@ namespace session_001_Visual_Studio
         }
     }
 }
+
