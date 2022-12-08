@@ -184,7 +184,7 @@
             this.richTextBoxText.Name = "richTextBoxText";
             this.richTextBoxText.Size = new System.Drawing.Size(254, 116);
             this.richTextBoxText.TabIndex = 10;
-            this.richTextBoxText.Text = "Hello C# \nMerhaba C#";
+            this.richTextBoxText.Text = "Hello C# \nMerhaba C#"; 
             // 
             // btnRichTextBox
             // 
@@ -259,7 +259,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(128, 118);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false; 
+            this.pictureBox1.TabStop = false;
             // 
             // checkBox1
             // 
@@ -269,7 +269,7 @@
             this.checkBox1.Size = new System.Drawing.Size(85, 24);
             this.checkBox1.TabIndex = 18;
             this.checkBox1.Text = "Ketchup";
-            this.checkBox1.UseVisualStyleBackColor = true; 
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // checkBox2
             // 
@@ -347,7 +347,7 @@
             this.radioButtonBox.Size = new System.Drawing.Size(128, 125);
             this.radioButtonBox.TabIndex = 25;
             this.radioButtonBox.TabStop = false;
-            this.radioButtonBox.Text = "Coffee Size"; 
+            this.radioButtonBox.Text = "Coffee Size";
             // 
             // panel1
             // 
@@ -358,14 +358,14 @@
             this.panel1.Location = new System.Drawing.Point(1043, 5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(195, 550);
-            this.panel1.TabIndex = 26; 
+            this.panel1.TabIndex = 26;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1241, 547);
+            this.ClientSize = new System.Drawing.Size(1250, 557);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.trackBarBtn);
             this.Controls.Add(this.trackBarVolume);
@@ -383,7 +383,7 @@
             this.Controls.Add(this.comboBoxNames);
             this.Controls.Add(this.textBoxMsg);
             this.Name = "Form1";
-            this.Text = "Form1"; 
+            this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.trackBarVolume)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

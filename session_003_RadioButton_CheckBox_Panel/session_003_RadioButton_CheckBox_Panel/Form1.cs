@@ -48,6 +48,7 @@ namespace session_001_Visual_Studio
         {
             richTextBoxText.Text = richTextBoxText.Text + "\n" + trackBarVolume.Value;
         }
+        // (ctrl+alt+x) toolbox shortcut
         // radio button'ın checkbox'tan farkı sadece bir tanesinin seçilebilmesidir
         // radio button'ın default seçili gelmesi için ise 'Checked'  kısmını true yapmamız gerekiyor
         // projeyi çalıştırırken bazen değişiklikler anında gözükmeyebiliyor. öyle bir durumda 'Build' kısmından
@@ -57,6 +58,6 @@ namespace session_001_Visual_Studio
         // solution explorer kısayolu (ctrl+Alt+L)
         // herhangi bir eventi kaldırmak istediğimiz zaman öncelikle ilgili kod satırını silmemiz, ardından ise
         // solution explorerda yer alan Designer'ın üzerine çift tıklayıp hata veren satırları siliyoruz
-         
+
     }
 }
