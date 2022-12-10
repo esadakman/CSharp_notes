@@ -2,7 +2,7 @@
 
 - Youtube üzerinde 'Yazılım Teknolojileri Akademisi' tarafından yayınlanmış olan 'C# Dersleri' başlıklı video serisini izlerken almış olduğum çalışma notlarım.
 
-İlgili video serisine [burdan](https://www.youtube.com/watch?v=3t0rU5Yo4nM&list=PLi1BmHvgBkxIYweLR52cRJnit4AEEugn4) ulaşabilirsiniz.
+İlgili video serisine [buradan](https://www.youtube.com/watch?v=3t0rU5Yo4nM&list=PLi1BmHvgBkxIYweLR52cRJnit4AEEugn4) ulaşabilirsiniz.
 
 ## session_001_Visual_Studio Notları:
 
@@ -34,18 +34,18 @@
 
 - Değişken tanımlarken void dışında tanımlarsak Form1 classında ki diğer yerlerde de kullanabiliriz.
 - Değişkenler'i Tek satırda tanımlayabileceğim gibi iki ayrı satırda da tanımlayabilirim
-`string isim; 
+  `string isim; 
  isim = textBox1.Text;`
 - String istenen yere integer yazdığımız zaman bu veriyi kullanmak istersek int'e çevirmemiz gerekiyor, bunun için Convert.ToInt16(var_name) veya Int16.Parse(var_name) metodlarını kullanabiliriz
 - Integer'a çevirmek için ise Convert.ToString(var_name) veya ToString(var_name) metodlarını kullanabiliriz
 
-## session_005_Data_Types _Float_DoubleChar
+## session_005_Data_Types \_Float_DoubleChar
 
 - float: 7 decimal digits, double: 15 decimal digits alır
-- float ile sayı tanımlarken sonuna 'f' eklemek gerekir, `float x = 5.123456789f;`  
-- double'ı kullanırken sonuna herhangi bir harf yazmamıza gerek yok fakat  double daha fazla yer kaplar.
+- float ile sayı tanımlarken sonuna 'f' eklemek gerekir, `float x = 5.123456789f;`
+- double'ı kullanırken sonuna herhangi bir harf yazmamıza gerek yok fakat double daha fazla yer kaplar.
 - Char veri türü, Unicode standardında eşdeğer karakterler içeren 16 bitlik bir veri türüdür. Her karakterin Unicode standart çerçevesinde karşılık gelen bir karakteri vardır ve char türüne bir değişken değeri atadıktan sonra bir karakteri temsil eder.
--  char tanımlarken tek tırnak olarak tanımlamamız gerekir
+- char tanımlarken tek tırnak olarak tanımlamamız gerekir
 
 ## session_006_Arithmetic_Operations
 
@@ -55,4 +55,19 @@
 
 ## session_007_Geometric_Calculator
 
-- 
+-
+
+## session_008_Functions
+
+- Fonksiyonlar yazılırken `public`, `private` ve de `protected` olmak üzere üç gizlilik seviyesinde yazılır.
+- Private => Sadece aynı class içerisinde çağrılabilir. Sadece belirtilen işlemi yaptığı ve herhangi bir şey döndürmediği için 'void' denir.
+- Fonksiyon isminin üstüne gelip f12'ye basarsak fonksiyonun tanımlandığı yere gidebiliriz
+
+## session_009_if_else
+
+- && operatörü “ve” anlamındadır
+- || operatörü “veya” anlamındadır
+ ```if (ort >= 50)
+    Console.WriteLine("Dersten Geçtiniz.");
+    else
+    Console.WriteLine("Dersten Kaldınız.");```
