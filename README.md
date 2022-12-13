@@ -53,9 +53,7 @@ isim = textBox1.Text;`
 - Bir sayının üssünü almak için Math.Pow func. kullanabiliriz.
 - Fakat Math.Pow() double döndüğü için ya sonucu (int) diyerek integere'a çeviririz ya da değişkenimizi double olarak belirleriz
 
-## session_007_Geometric_Calculator
-
--
+<!-- ## session_007_Geometric_Calculator  -->
 
 ## session_008_Functions
 
@@ -78,8 +76,7 @@ Console.WriteLine("Dersten Kaldınız.");
 ## session_010_Switch_Case
 
 - JavaScript'ten farklı olarak burda her case'de break yazmamız gerekiyor.
-- String interpolation using :
--
+- String interpolation using : 
 
 ```cSharp
 string name = "Mark";
@@ -131,3 +128,5 @@ Console.WriteLine($"Hello, {name}! Today is {date.DayOfWeek}, it's {date:HH:mm} 
       i++; 
   } while (i < 5);
 ```
+<!-- ## session_015_Quiz -->
+
