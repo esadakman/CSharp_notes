@@ -1,12 +1,17 @@
-# Csharp_notes
+# CSharp_notes
+<!-- ## extra_notlar
 
+ -->
 - Youtube üzerinde 'Yazılım Teknolojileri Akademisi' tarafından yayınlanmış olan 'C# Dersleri' başlıklı video serisini izlerken almış olduğum çalışma notlarım.
 
 İlgili video serisine [buradan](https://www.youtube.com/watch?v=3t0rU5Yo4nM&list=PLi1BmHvgBkxIYweLR52cRJnit4AEEugn4) ulaşabilirsiniz.
 
-## session_001_Visual_Studio Notları:
+## session_001_Visual_Studio_Notları:
 
 - Yorum kısayolu (ctrl+k) + (ctrl+C) veya manuel olarak `//` yazarak tek satırı, `/* text */` diyerek birden fazla satırı yoruma alabiliriz.
+- (ctrl+k) + (ctrl+D) tuşlarına basarak bütün sayfayı düzenleyebiliriz. (formatter)
+- (Shift + Alt + '.'): Seçili yerin (varsa) bir sonraki tekrarını seçer
+- (Shift + Alt + ','): Seçili yerin (varsa) bütün tekrarlarını seçer
 - Solution Explorer kısayolu (ctrl+Alt+L)
 - Toolbox Explorer kısayolu (ctrl+Alt+X)
 - Eklemeyi istediğimiz tool'ları toolbox'dan seçip sürükleyerek formumuza ekleyebiliriz
@@ -14,6 +19,10 @@
 - ComboBox sınıfı, yöntemini kullanarak IndexOf belirtilen nesneyi arar.
 - comboBoxNames.Items.Add diyerek comboBox'a item ekleyebiliriz
 - SelectedItemComboBox , bu nesneyi listede o anda seçili olan nesne yapmaya çalışır.
+#### VSCode_Notları
+- 'dotnet --help' komutunu console'a yazarakdotnet sürümümü kontrol edebilirim.
+- 'dotnet new console' komutunu console'a yazarak basit bir console projesi oluşrurabiliriz.
+- 'dotnet run' komutunu console'a yazarak ise console projemizi çalışrıtabiliriz.
 
 ## session_002_GUI_Window_Forms Notları:
 
@@ -97,11 +106,10 @@ Console.WriteLine($"Hello, {name}! Today is {date.DayOfWeek}, it's {date:HH:mm} 
 
 ## session_012_for_loop
 
+- For loop içerisinde tek satır kod yazacaksak süslü parantez açmamıza gerek yok
 ```cSharp
- for (int i = 0; i <= 10; i++)
- {
-   Console.WriteLine(i);
- }
+ for (int i = 0; i <= 10; i++) 
+   Console.WriteLine(i); 
 ```
 
 ## session_014_While_Do_While
@@ -129,4 +137,21 @@ Console.WriteLine($"Hello, {name}! Today is {date.DayOfWeek}, it's {date:HH:mm} 
   } while (i < 5);
 ```
 <!-- ## session_015_Quiz -->
+## session_016_Timer_Progress_Bar
+
+- Timer componenti ekranda görünmez ama arka planda çalışır .
+- Properties kısmından enabled'ı true yaparsak program çalışır çalışmaz Timer'ımız çalışmaya başlar.
+- Interval kısmından ise timer'ı çağıracağımız zaman aralığını belirleyebiliriz
+- Yine properties kısmından Events'e gelerek behavior kısmına çift tıklıyarak bir timer_tick fonksiyonu oluşturabiliriz. (Start ve Stop fonksiyonlarıyla timer'ı yönetibiliriz)
+
+## session_017_Array
+
+- Birden fazla aynı tipte veriyi tek bir değişkende toplayan verilere array denir
+- Bir array oluştururken değişken oluştururkende yaptığımız gibi önce tipini belirtmemiz gerekiyor.  
+``` CSharp
+  int[] array = { 7, 12, 25, 34, 46 };
+  string[] employees = { "Michael", "Dwight", "Jim", "Pam", "Creed" };
+```
+
+
 
