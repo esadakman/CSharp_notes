@@ -9,7 +9,7 @@ namespace for_loop
 
         private void resBtn_Click(object sender, EventArgs e)
         {
-            label1.Text= "Sayılar: ";
+            label1.Text= "Sayilar: ";
             int N = Convert.ToInt32(textBox1.Text);
             for (int i=0; i<= N;i++)
             {
