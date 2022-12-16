@@ -165,16 +165,66 @@ Console.WriteLine($"Hello, {name}! Today is {date.DayOfWeek}, it's {date:HH:mm} 
 ## session_018_Foreach
 
 - for each kullanırken arraylere indexle erişmek zorunda değiliz. Iteratorla erişebiliriz.
+
 ```CSharp
   string[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
   foreach (string i in cars)
   {
     Console.WriteLine(i);
   }
-``` 
+```
 
 ## session_019_CSharp_Console
-- Çalıştığımız projeyi konsolda kullanmak istiyorsak; 
+
+- Çalıştığımız projeyi konsolda kullanmak istiyorsak;
 - Proje ismine sağ tıklayıp properties'e geliyoruz
 - Outpu Type'ı Console Application olarak değiştiriyoruz
-- İnput gitmek için ise `Console.ReadLine`'ı kullanabiliriz. (Int'e çevirmeyi unutmamalıyız) 
+- Kullanıcıdan input almak için `Console.ReadLine`'ı kullanabiliriz. (Int'e çevirmeyi unutmamalıyız)
+
+## session_020_Try_Catch_Finally
+
+```CSharp
+ try
+  {
+    Yapılmasını istediğimiz ve hataya sebep olma ihtimali olan kodları buraya yazarız.
+  }
+catch
+  {
+    Try bloğuna yazdığımız işlemler yapılırken bir hata oluşur ise buradaki işlemler yapılır. Hata olmaz ise bu blok es geçilir.
+  }
+finally
+  {
+    Hata olsa da olmasa da mutlaka yapılmasını istediğimiz işlemleri ise buraya yazarız.
+  }
+```
+
+```CSharp
+  try
+  {
+      int a = int.Parse(textBox1.Text);
+      int b = int.Parse(textBox2.Text);
+      int c = a * b;
+        label1.Text = c.ToString();
+  } 
+  catch (ArgumentNullException hata1)
+  {
+      label1.Text = "Değer girmediniz.";
+  }
+  catch(FormatException hata2)
+  {
+      label1.Text = "Hatalı türde veri girdiniz.";
+  }
+  catch (OverflowException hata3)
+  {
+      label1.Text = "Girdiğiniz değer çok büyük.";
+  }
+  finally
+  {
+      textBox1.Text = "";
+      textBox2.Text = "";
+  }
+```
+## session_021_Window_Forms_Icon
+
+- Form'a tıklayıp 'Window Style' bölümünden Icon'a geliyoruz 
+- Iconlarımızı kullanabilmek için dosya uzantılarımızın .ico olması gerekiyor. (Uzantı değiştirmek için IrfanView kullanılabilir) 
