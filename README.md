@@ -228,3 +228,22 @@ finally
 
 - Form'a tıklayıp 'Window Style' bölümünden Icon'a geliyoruz 
 - Iconlarımızı kullanabilmek için dosya uzantılarımızın .ico olması gerekiyor. (Uzantı değiştirmek için IrfanView kullanılabilir) 
+
+## session_022_Generate_Exe_File
+
+- Solution Explorer'da projenin üstüne sağ tıklayıp Publish'e geliyoruz.
+- '+New' butonuna tıklıyoruz.
+- Yayınlama türümüzü seçiyoruz.(Bizim senaryomuzda klasörü seçiyoruz)
+- Bir kez daha klasörü seçiyoruz.
+- Klasör konumumuzu belirliyoruz.
+- Son deyip pencereyi kapatıyoruz
+- 'Publish' butonuna tıklayıp kullanıma hazır hale getiriyoruz
+
+## session_023_Transition_Between_Forms
+
+- Yeni form açmak için projeye sağ tıklayıp 'Add', 'New Item' diyoruz
+- Form1'den butona tıklayıp  `Form2 form2 = new Form2();` yazıyoruz ve alt satıra `form2.Show();` yazıyoruz fakat bu durumda ilk pencere arka planda açık kalıyor. ( `form2.ShowDialog();` dediğimiz zaman ise ilk formumuz yine açık kalıyor fakat tıklanmıyor)
+- İlk formumuzun kapanmasını istiyorsak => 
+   - Öncelikle Show satırımızdan önce `this.Hide();` komutumuzu giriyoruz fakat bu durumda projeyi kapattığımız zaman arka planda çalışmaya devam ediyor.(Bu olaya zombi uygulama deniyor)
+   - Bu durumu engellemek için ise Form2'ye gidip Properties kısmından Events'e geliyoruz ve 'FormClosed'a çift tıklıyoruz.
+   - `Application.Exit();` komutumuzu yazıp programımızın arka planda çalışmasını engellemiş oluyoruz 
