@@ -53,7 +53,7 @@ isim = textBox1.Text;`
 - String istenen yere integer yazdığımız zaman bu veriyi kullanmak istersek int'e çevirmemiz gerekiyor, bunun için Convert.ToInt16(var_name) veya Int16.Parse(var_name) metodlarını kullanabiliriz
 - Integer'a çevirmek için ise Convert.ToString(var_name) veya ToString(var_name) metodlarını kullanabiliriz
 
-## session_005_Data_Types \_Float_DoubleChar
+## session_005_Data_Types_Float_DoubleChar
 
 - float: 7 decimal digits, double: 15 decimal digits alır
 - float ile sayı tanımlarken sonuna 'f' eklemek gerekir, `float x = 5.123456789f;`
@@ -247,3 +247,23 @@ finally
    - Öncelikle Show satırımızdan önce `this.Hide();` komutumuzu giriyoruz fakat bu durumda projeyi kapattığımız zaman arka planda çalışmaya devam ediyor.(Bu olaya zombi uygulama deniyor)
    - Bu durumu engellemek için ise Form2'ye gidip Properties kısmından Events'e geliyoruz ve 'FormClosed'a çift tıklıyoruz.
    - `Application.Exit();` komutumuzu yazıp programımızın arka planda çalışmasını engellemiş oluyoruz 
+
+## session_025_OOP_Class_Object
+
+- Window Forms'da Class Oluşturmak için;
+  - Solution explorerda uygulamanın üzerine sağ tıklıyoruz,
+  - 'Add' kısmından 'New Item'a tıklıyoruz.
+  - Açılan pencereden Class'ı seçip class ismimizi yazdıktan sonra 'Add' butonuna tıklıyoruz 
+  - Açılan sayfada ilgili tanımlamalarımızı yaparak classı'mızı oluşturuyoruz.
+- Public ile tanımlanan metotlara başka sınıflar içerisinden ulaşılabilir. 
+- Private kelimesiyle tanımlanan bir metot sadece o sınıf içerisinde kullanılabilir. 
+- Class'ımızı oluşturduktan sonra form'umuza gelip kullanmaya başlayabiliriz
+- Private özeliiklerimi kullanmak istiyorsak class tanımlamamızı yaptığımız yerde ilgili özelliğe özel olarak bir method oluşturmamız gerekiyor
+
+## session_026_Encapsulation_get_set_getter_setter
+- Kapsülleme (Encapsulation) kavramı bir nesnenin bazı özellik ve işlevlerini başka sınıflardan ve nesnelerden saklamaktır. Private erişim belirteci sayesinde bu şekilde tanımlanan bir field’ i başka sınıflardan gizlemiş oluruz. Ayrıca bu field başka sınıflarda kullanılamaz.
+- Kapsülleme (Encapsulation) sayesinde nesneler bilinçsiz kullanımdan korunmuş olur. Fakat bazı durumlarda private field’ lara erişmemiz ve özelliklerini kullanmamız gerekebilir. Bu durumda Property kavramı devreye girer. Property bir field’ in değerini geri döndürmeye (Get) ve değerini ayarlamaya (Set) olanak sağlar.
+- Kapsülleme işlemi yapmak için class'ımızda private özelliğimize gelip satırı veya variable ismini seçip sağ tıklıyoruz.
+- Quick Actions and Refactorings'e tıklıyoruz ve Encapsulle'me işlemimizi seçiyoruz
+- Encapsulate işlemimizi tamamladıktan sonra istersek ilgili encapsulation'a sağ tıklayıp 'find all references' diyerek getter'ımızın ve setter'ımızın projede kullanıldığı yerleri görebiliriz.
+- Fonksiyon ismini değiştirmek için ilgili yere gelip 'Rename' diyerek değiştirebiliyoruz
